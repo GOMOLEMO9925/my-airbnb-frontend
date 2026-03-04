@@ -1,13 +1,11 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useEffect, useState } from "react";
-import airbnbRedLogo from "../assets/airbnb-red.svg";
-import airbnbWhiteLogo from "../assets/airbnb-white.svg";
 
 const Header = () => {
   const { user, isAuthenticated, logout } = useAuth();
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState(() => localStorage.getItem("airbnb_theme") || "light");
+  const [theme, setTheme] = useState(() => localStorage.getItem("stayhub_theme") || "light");
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +18,7 @@ const Header = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("airbnb_theme", theme);
+    localStorage.setItem("stayhub_theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -51,14 +49,26 @@ const Header = () => {
     <header className="top-header">
       <div className="top-header-inner">
         <div className="brand">
-          <Link to="/" aria-label="Airbnb home">
-            <img
+          <Link to="/" aria-label="StayHub home">
+            <span
               className="brand-logo"
-              src={theme === "dark" ? airbnbWhiteLogo : airbnbRedLogo}
-              style={{ height: 32, width: 32 }}
-              alt="Airbnb"
-            />
-            <span>Airbnb</span>
+              style={{
+                height: 32,
+                width: 32,
+                borderRadius: 999,
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 13,
+                fontWeight: 700,
+                background: "var(--surface-alt)",
+                border: "1px solid var(--line)"
+              }}
+              aria-hidden="true"
+            >
+              SH
+            </span>
+            <span>StayHub</span>
           </Link>
         </div>
 

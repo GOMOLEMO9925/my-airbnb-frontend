@@ -60,7 +60,7 @@ const Login = () => {
           <button type="submit" disabled={loading}>{loading ? "Signing in..." : "Login"}</button>
         </form>
         <p className="auth-switch">
-          New to Airbnb?{" "}
+          New to StayHub?{" "}
           <Link to={nextPath ? `/signup?next=${encodeURIComponent(nextPath)}` : "/signup"}>Create an account</Link>
         </p>
       </section>

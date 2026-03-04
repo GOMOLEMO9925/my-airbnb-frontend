@@ -2,8 +2,8 @@ import React, { createContext, useContext, useMemo, useState } from "react";
 
 const AuthContext = createContext(null);
 
-const TOKEN_KEY = "airbnb_token";
-const USER_KEY = "airbnb_user";
+const TOKEN_KEY = "stayhub_token";
+const USER_KEY = "stayhub_user";
 
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(() => localStorage.getItem(TOKEN_KEY));

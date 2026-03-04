@@ -13,7 +13,7 @@ const daysBetween = (start, end) => {
 
 const featureRows = [
   { title: "Entire home", text: "You'll have the apartment to yourself." },
-  { title: "Enhanced Clean", text: "This host committed to Airbnb's enhanced cleaning process." },
+  { title: "Enhanced Clean", text: "This host follows a detailed enhanced cleaning process." },
   { title: "Self check-in", text: "Check yourself in with the lockbox." },
   { title: "Free cancellation", text: "Free cancellation before Feb 14." }
 ];
@@ -303,7 +303,7 @@ const LocationDetails = () => {
             </div>
             <div>
               <h4>Health & safety</h4>
-              <p>Committed to Airbnb's enhanced cleaning process.</p>
+              <p>Committed to an enhanced cleaning process.</p>
               <p>Smoke alarm and carbon monoxide alarm.</p>
             </div>
             <div>

@@ -64,7 +64,7 @@ const Signup = () => {
     <div className="page login">
       <section className="auth-card">
         <p className="eyebrow">Create account</p>
-        <h1>Sign up for Airbnb</h1>
+        <h1>Sign up for StayHub</h1>
         <form onSubmit={handleSubmit} className="form">
           <label>
             Username

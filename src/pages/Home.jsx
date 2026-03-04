@@ -7,7 +7,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <p className="eyebrow">Not sure where to go? Perfect.</p>
-          <h1>Find your next stay on Airbnb</h1>
+          <h1>Find your next stay on StayHub</h1>
           <p className="hero-copy">
             Explore entire homes, unique experiences, and places to stay with people who welcome you.
           </p>
@@ -38,7 +38,7 @@ const Home = () => {
       </section>
 
       <section className="section">
-        <h2>Discover Airbnb Experiences</h2>
+        <h2>Discover Local Experiences</h2>
         <div className="grid experience-grid">
           {experienceCategories.map((item) => (
             <article className="card experience-card" key={item.id}>
@@ -69,23 +69,23 @@ const Home = () => {
           <div>
             <h4>Support</h4>
             <p>Help Center</p>
-            <p>AirCover</p>
+            <p>Travel protection</p>
             <p>Anti-discrimination</p>
           </div>
           <div>
             <h4>Hosting</h4>
-            <p>Airbnb your home</p>
+            <p>Host your home</p>
             <p>Hosting resources</p>
             <p>Community forum</p>
           </div>
           <div>
-            <h4>Airbnb</h4>
+            <h4>StayHub</h4>
             <p>Newsroom</p>
             <p>Careers</p>
             <p>Investors</p>
           </div>
         </div>
-        <div className="footer-bottom">© 2026 Airbnb Clone · Privacy · Terms · Sitemap</div>
+        <div className="footer-bottom">© 2026 StayHub · Privacy · Terms · Sitemap</div>
       </footer>
     </div>
   );
